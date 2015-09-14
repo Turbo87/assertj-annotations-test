@@ -8,6 +8,7 @@ import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
+import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -27,6 +28,11 @@ public class AssertionProcessor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         System.out.println("Hello World!");
+
+        for (Element annotatedElement : roundEnv.getElementsAnnotatedWith(Assertion.class)) {
+            System.out.printf("%s\n", annotatedElement);
+        }
+
         return true;
     }
 
