@@ -2,4 +2,5 @@ apply plugin: 'java'
 
 dependencies {
     compile project(':aat-annotation')
+    testCompile 'junit:junit:4.12'
 }
