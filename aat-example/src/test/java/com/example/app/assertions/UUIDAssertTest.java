@@ -1,6 +1,5 @@
 package com.example.app.assertions;
 
-import com.example.app.assertions.UUIDAssert;
 import org.junit.Test;
 
 import java.util.UUID;
