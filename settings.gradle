@@ -1,0 +1,4 @@
+include 'aat-annotation' 
+include 'aat-processor'  
+include 'aat-example-lib'
+include 'aat-example'    

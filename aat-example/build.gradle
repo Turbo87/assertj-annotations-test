@@ -1,0 +1,11 @@
+plugins {
+  id "net.ltgt.apt" version "0.3"
+}
+
+apply plugin: 'java'
+
+dependencies {
+    testCompile project(':aat-annotation')
+    testCompile project(':aat-example-lib')
+    testApt project(':aat-processor')
+}
